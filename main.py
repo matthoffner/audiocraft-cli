@@ -32,7 +32,7 @@ model.set_generation_params(
     duration=duration  # generate x seconds
 )
 
-wav = model.generate(prompt)  # generates as many samples as in comma separated descriptions
+wav = model.generate([prompt])  # generates as many samples as in comma separated descriptions
 
 for idx, one_wav in enumerate(wav):
     file_name = f'{idx}_{current_date_time}'
